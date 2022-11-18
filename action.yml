@@ -49,7 +49,7 @@ runs:
           echo "release=jammy" >> $GITHUB_ENV
           echo "build-minimal=no" >> $GITHUB_ENV
           echo "build-desktop=yes" >> $GITHUB_ENV
-          echo "desktop-environment=kde" >> $GITHUB_ENV
+          echo "desktop-environment=plasma" >> $GITHUB_ENV
           echo "desktop-environment-config-name=config_base" >> $GITHUB_ENV
           echo "expert=yes" >> $GITHUB_ENV
         elif [ ${{ inputs.flavor }} == "debian_kde" ]
@@ -57,7 +57,7 @@ runs:
           echo "release=sid" >> $GITHUB_ENV
           echo "build-minimal=no" >> $GITHUB_ENV
           echo "build-desktop=yes" >> $GITHUB_ENV
-          echo "desktop-environment=kde" >> $GITHUB_ENV
+          echo "desktop-environment=plasma" >> $GITHUB_ENV
           echo "desktop-environment-config-name=config_base" >> $GITHUB_ENV
           echo "expert=yes" >> $GITHUB_ENV
         fi
