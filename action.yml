@@ -56,12 +56,12 @@ runs:
           then
             if [ ${{ inputs.branch }} == "legacy" ]
             then
-              echo "desktop_appgroups_selected=\"browsers chat desktop_tools editors email internet multimedia office programming remote_desktop\"" >> $GITHUB_ENV
+              echo "desktop_appgroups_selected=\"browsers email multimedia office remote_desktop\"" >> $GITHUB_ENV
             else
-              echo "desktop_appgroups_selected=\"3dsupport browsers chat desktop_tools editors email internet multimedia office programming remote_desktop\"" >> $GITHUB_ENV
+              echo "desktop_appgroups_selected=\"3dsupport browsers email multimedia office remote_desktop\"" >> $GITHUB_ENV
             fi
           else
-            echo "desktop_appgroups_selected=\"3dsupport browsers chat desktop_tools editors email internet multimedia office programming remote_desktop\"" >> $GITHUB_ENV
+            echo "desktop_appgroups_selected=\"3dsupport browsers email multimedia office remote_desktop\"" >> $GITHUB_ENV
           fi
         elif [ ${{ inputs.flavor }} == "ubuntu_kde" ]
         then
@@ -75,12 +75,12 @@ runs:
           then
             if [ ${{ inputs.branch }} == "legacy" ]
             then
-              echo "desktop_appgroups_selected=\"browsers email internet multimedia office remote_desktop\"" >> $GITHUB_ENV
+              echo "desktop_appgroups_selected=\"browsers email multimedia office remote_desktop\"" >> $GITHUB_ENV
             else
-              echo "desktop_appgroups_selected=\"3dsupport browsers email internet multimedia office remote_desktop\"" >> $GITHUB_ENV
+              echo "desktop_appgroups_selected=\"3dsupport browsers email multimedia office remote_desktop\"" >> $GITHUB_ENV
             fi
           else
-            echo "desktop_appgroups_selected=\"3dsupport browsers email internet multimedia office remote_desktop\"" >> $GITHUB_ENV
+            echo "desktop_appgroups_selected=\"3dsupport browsers email multimedia office remote_desktop\"" >> $GITHUB_ENV
           fi
         fi
     - name: Build
